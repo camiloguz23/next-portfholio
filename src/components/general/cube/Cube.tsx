@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./cube.module.scss";
+import style from "./Cube.module.scss";
 
 type Style = {
   top?: number;
