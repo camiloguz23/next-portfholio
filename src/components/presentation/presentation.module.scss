@@ -1,0 +1,48 @@
+@import "./../../styles/color.scss";
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background-image: url("/img/otoño-fondos-naturaleza-wallpapers-gratis.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: $color-letter-link;
+
+  &::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: hsla(230, 96%, 14%, 0.5);
+    position: absolute;
+  }
+
+  .info {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    :is(h1, h2, h3) & {
+      color: $color-letter-link;
+    }
+
+    h1 {
+      font-size: 3rem;
+      width: 100%;
+      text-align: center;
+    }
+    .rol {
+      font-size: 2rem;
+    }
+
+    .skill {
+      font-size: 1.5rem;
+    }
+  }
+}

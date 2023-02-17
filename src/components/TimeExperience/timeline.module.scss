@@ -1,0 +1,28 @@
+
+.timeLine {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .contentTime {
+    width: 60%;
+    box-shadow: 10px 10px 20px #a8aaad, -10px -10px 20px #ffffff;
+
+    @media (min-width:1600px) {
+      width: 60%;
+      padding: 60px 0;
+    }
+
+    @media (max-width: 600px) {
+      width: 90%;
+    }
+
+    .companies {
+      cursor: pointer;
+    }
+  }
+
+ 
+}

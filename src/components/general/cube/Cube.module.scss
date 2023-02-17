@@ -1,0 +1,60 @@
+$size: 2.5rem;
+.wrap {
+  width: $size;
+  height: $size;
+  position: absolute;
+  transform-style: preserve-3d;
+  z-index: 2;
+}
+
+.cube {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform-style: preserve-3d;
+  animation: girar 3s linear infinite;
+}
+
+@keyframes girar {
+  0% {
+    transform: rotateX(-30deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(-30deg) rotateY(360deg);
+  }
+}
+
+.cube div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(black, #0028ff);
+}
+.lado2 {
+  transform: rotateY(calc(90deg * 1)) translateZ(calc($size / 2));
+}
+
+.lado3 {
+  transform: rotateY(calc(90deg * 2)) translateZ(calc($size / 2));
+}
+.lado4 {
+  transform: rotateY(calc(90deg * 3)) translateZ(calc($size / 2));
+}
+.lado1 {
+  transform: rotateY(calc(90deg * 0)) translateZ(calc($size / 2));
+}
+
+.cube .up {
+  transform: rotateX(90deg) translateZ(calc($size / 2));
+  background: linear-gradient(black, black);
+}
+
+.cube .down {
+  transform: rotateX(90deg) translateZ(-$size);
+  background: linear-gradient(#0028ff, #0028ff);
+  box-shadow: 1px 1px 10px 10px #0028ff;
+}

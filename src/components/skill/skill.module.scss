@@ -1,0 +1,47 @@
+@import "../../styles/color.scss";
+@import "../../styles/mixin.scss";
+
+.skillContent {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+
+  .contentItem {
+    display: flex;
+    max-width: 50%;
+    min-width: 50%;
+    align-items: center;
+    flex-direction: column;
+    height: 350px;
+    box-shadow: 10px 10px 20px #a8aaad, -10px -10px 20px #ffffff;
+    border-radius: 8px;
+    padding: 6px;
+
+    @media (max-width:500px) {
+      max-width: 90%;
+      min-width: 90%;
+    }
+
+    .infoSkill{
+      text-align: center;
+      font-size: 1.5rem
+    }
+
+    .titleSkill {
+      @include label(120px);
+      @include glassEffect(0.1, 20px);
+
+      i {
+        margin-right: 20px;
+      }
+    }
+
+    .itemSkill {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}

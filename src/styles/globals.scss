@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: var(--roboto);
+  @media (max-width: 400px) {
+    font-size: 8px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 10px;
+  }
+  @media (max-width: 800px) {
+    font-size: 12px;
+  }
+
+  @media (min-width: 1600px) {
+    font-size: 16px;
+  }
+}
+
+body {
+  background-color: #dfe4e7;
+}
