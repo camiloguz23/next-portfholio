@@ -1,13 +1,12 @@
-import React from "react";
-import style from "./modal.module.scss";
-import { Company } from "../../model/timeLine.model";
+import style from './modal.module.scss';
+import { type Company } from '../../model/timeLine.model';
 
-type Prop = {
+interface Prop {
   company: Company;
   onClick: () => void;
 };
 
-function Modal({ company, onClick }: Prop) {
+function Modal({ company, onClick }: Prop): JSX.Element {
   return (
     <div className={style.modal} onClick={onClick}>
       <span className={style.rol}>

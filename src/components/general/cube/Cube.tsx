@@ -1,18 +1,17 @@
-import React from "react";
-import style from "./Cube.module.scss";
+import style from './Cube.module.scss';
 
-type Style = {
+interface Style {
   top?: number;
   left?: number;
   right?: number;
   bottom?: number;
-};
+}
 
 interface Prop {
   setStyle: Style;
 }
 
-export default function Cube({ setStyle }: Prop) {
+export default function Cube({ setStyle }: Prop): JSX.Element {
   return (
     <div className={style.wrap} style={setStyle}>
       <div className={style.cube}>

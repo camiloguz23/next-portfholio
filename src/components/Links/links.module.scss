@@ -1,36 +1,34 @@
-@import "./../../styles/color.scss";
+@import './../../styles/color.scss';
 
 .link {
-    position: relative;
-    text-decoration: none;
-    color: $color-letter-link;
-    font-size: 1.3rem;
-    font-weight: 900;
+  position: relative;
+  text-decoration: none;
+  color: $color-letter-link;
+  font-size: 1.3rem;
+  font-weight: 900;
 
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+  }
+
+  &:hover {
     &::before {
-        content: "";
-        position: absolute;
-        bottom: 0;
+      animation-name: line;
+      animation-timing-function: ease-in;
+      animation-duration: 0.5s;
+      animation-fill-mode: forwards;
+      border: solid 1px $color-letter-link;
     }
-
-    &:hover {
-
-        &::before {
-            animation-name: line;
-            animation-timing-function: ease-in;
-            animation-duration: 0.5s;
-            animation-fill-mode: forwards;
-            border: solid 1px $color-letter-link
-        }
-    }
-
+  }
 }
 
 @keyframes line {
-    0%{
-        width: 0;
-    }
-    100% {
-        width: 100%; ;
-    }
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }

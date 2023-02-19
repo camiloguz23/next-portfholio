@@ -1,27 +1,27 @@
 @mixin animatedGraphic($name, $time) {
-    animation-name: $name;
-    animation-duration: 2s;
-    animation-timing-function: ease;
-    animation-iteration-count: infinite;
-    animation-fill-mode: both;
-    animation-direction: alternate-reverse;
-    animation-delay: $time;
-  }
-  
-  @mixin label($width) {
-    font-size: 22px;
-    padding: 2px;
-    width: $width;
-    background-color: hsla(210, 60%, 50%, 0.6);
-    color: $blue-main;
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-    text-align: start;
-    margin-bottom: 20px;
-  }
-  
-  @mixin glassEffect ($visibility,$blur) {
-    background-color: hsla(230°, 92%, 14%, $visibility);
-    backdrop-filter: blur($blur);
-  }
+  animation-name: $name;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  animation-direction: alternate-reverse;
+  animation-delay: $time;
+}
+
+@mixin label($width) {
+  font-size: 22px;
+  padding: 2px;
+  width: $width;
+  background-color: hsla(210, 60%, 50%, 0.6);
+  color: $blue-main;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  text-align: start;
+  margin-bottom: 20px;
+}
+
+@mixin glassEffect($visibility, $blur) {
+  background-color: hsla(230°, 92%, 14%, $visibility);
+  backdrop-filter: blur($blur);
+}

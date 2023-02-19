@@ -1,13 +1,12 @@
-import Link from "next/link";
-import React from "react";
-import style from "./links.module.scss";
+import Link from 'next/link';
+import style from './links.module.scss';
 
-type Prop = {
+interface Prop {
   name: string;
   path: string;
 };
 
-function Links({ name, path }: Prop) {
+function Links({ name, path }: Prop): JSX.Element {
   return (
     <Link className={style.link} href={path}>
       {name}
