@@ -1,8 +1,7 @@
-import { Waves } from "@/components";
-import React from "react";
-import style from "./presentation.module.scss";
+import { Waves } from '@/components';
+import style from './presentation.module.scss';
 
-function Presentation() {
+function Presentation(): JSX.Element {
   return (
     <div className={style.intro}>
       <div className={style.info}>
@@ -10,7 +9,7 @@ function Presentation() {
         <h2 className={style.rol}>Frontend Developer</h2>
         <h3 className={style.skill}>React JS, Angular</h3>
       </div>
-      <Waves color="#dfe4e7" />
+      <Waves color='#dfe4e7' />
     </div>
   );
 }

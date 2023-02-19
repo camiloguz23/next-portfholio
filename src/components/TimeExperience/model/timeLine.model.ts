@@ -4,6 +4,4 @@ export interface Company {
   description: string;
 }
 
-export interface Experience {
-  [id: string]: Company;
-}
+export type Experience = Record<string, Company>;

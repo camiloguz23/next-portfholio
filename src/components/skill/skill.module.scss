@@ -1,5 +1,5 @@
-@import "../../styles/color.scss";
-@import "../../styles/mixin.scss";
+@import '../../styles/color.scss';
+@import '../../styles/mixin.scss';
 
 .skillContent {
   height: 100vh;
@@ -19,14 +19,14 @@
     border-radius: 8px;
     padding: 6px;
 
-    @media (max-width:500px) {
+    @media (max-width: 500px) {
       max-width: 90%;
       min-width: 90%;
     }
 
-    .infoSkill{
+    .infoSkill {
       text-align: center;
-      font-size: 1.5rem
+      font-size: 1.5rem;
     }
 
     .titleSkill {
