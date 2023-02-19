@@ -1,19 +1,18 @@
-import { HeadHtml, Header } from '@/components'
-import React from 'react'
+import { HeadHtml, Header } from '@/components';
 
-type Prop = {
-    title?:string,
-    children: React.ReactNode
+interface Prop {
+  title?: string;
+  children: React.ReactNode;
 }
 
-function MainLayout({title,children}:Prop) {
+function MainLayout({ title, children }: Prop): JSX.Element {
   return (
     <>
-        <HeadHtml title={title} />
-        <Header />
-        {children}
+      <HeadHtml title={title} />
+      <Header />
+      {children}
     </>
-  )
+  );
 }
 
-export default MainLayout
+export default MainLayout;

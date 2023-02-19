@@ -1,17 +1,16 @@
-import Head from "next/head";
-import React from "react";
+import Head from 'next/head';
 
-type Prop = {
+interface Prop {
   title?: string;
-};
+}
 
-function HeadHtml({ title }: Prop) {
+function HeadHtml({ title = 'Jeyson Guzman' }: Prop): JSX.Element {
   return (
     <Head>
-      <title>{`Jeyson Guzman ${title ?? `- ${title}`}`}</title>
-      <meta name="description" content="Esta es mi pagina personal" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link rel="icon" href="/img/JR.svg" />
+      <title>{`${title}`}</title>
+      <meta name='description' content='Esta es mi pagina personal' />
+      <meta name='viewport' content='width=device-width, initial-scale=1' />
+      <link rel='icon' href='/img/JR.svg' />
     </Head>
   );
 }

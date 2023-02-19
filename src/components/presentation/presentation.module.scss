@@ -1,4 +1,4 @@
-@import "./../../styles/color.scss";
+@import './../../styles/color.scss';
 
 .intro {
   display: flex;
@@ -7,14 +7,14 @@
   flex-direction: column;
   height: 100vh;
   width: 100%;
-  background-image: url("/img/otoño-fondos-naturaleza-wallpapers-gratis.jpg");
+  background-image: url('/img/otoño-fondos-naturaleza-wallpapers-gratis.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   color: $color-letter-link;
 
   &::before {
-    content: "";
+    content: '';
     height: 100%;
     width: 100%;
     background-color: hsla(230, 96%, 14%, 0.5);

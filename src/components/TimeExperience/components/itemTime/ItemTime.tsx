@@ -1,28 +1,20 @@
-import {
-  TimelineConnector,
-  TimelineContent,
-  TimelineDot,
-  TimelineItem,
-  TimelineOppositeContent,
-  TimelineSeparator,
-} from "@mui/lab";
-import React, { useState } from "react";
-import style from "./itemTime.module.scss";
+import { TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineOppositeContent, TimelineSeparator } from '@mui/lab';
+import style from './itemTime.module.scss';
 
-type Prop = {
+interface Prop {
   onShow: (id: boolean) => void;
   date: string;
   nameCompany: string;
-};
+}
 
-function ItemTime({ onShow, date, nameCompany }: Prop) {
+function ItemTime({ onShow, date, nameCompany }: Prop): JSX.Element {
   return (
     <TimelineItem>
-      <TimelineOppositeContent color="text.secondary">
+      <TimelineOppositeContent color='text.secondary'>
         <span className={style.date}>{date}</span>
       </TimelineOppositeContent>
       <TimelineSeparator>
-        <TimelineDot color="info" />
+        <TimelineDot color='info' />
         <TimelineConnector />
       </TimelineSeparator>
       <TimelineContent>
