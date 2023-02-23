@@ -1,11 +1,11 @@
-@import '../../../../styles/mixin.scss';
+@import '../../../../styles/color.scss';
 
 .modal {
   position: absolute;
   width: 25rem;
   height: 25rem;
-  @include glassEffect(0, 2px);
-  background-color: hsla(0, 10%, 60%, 0.3);
+  background-color: hsla(0, 1%, 19%, 0.6);
+  backdrop-filter: blur(2px);
   box-shadow: 10px 10px 20px #ffffff, -10px -10px 20px #ffffff;
   border-radius: 6px;
   display: flex;
@@ -13,6 +13,7 @@
   align-items: center;
   padding: 10px;
   cursor: pointer;
+  color: white;
 
   .rol {
     width: 90%;
@@ -28,5 +29,10 @@
     max-width: 80%;
     overflow: hidden;
     white-space: break-spaces;
+  }
+
+  .rol,
+  .description {
+    font-size: 1.3rem;
   }
 }

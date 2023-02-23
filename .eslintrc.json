@@ -4,16 +4,12 @@
     "es2021": true,
     "node": true
   },
-  "extends": [
-    "plugin:react/recommended",
-    "standard-with-typescript",
-    "plugin:react/jsx-runtime"
-  ],
+  "extends": ["plugin:react/recommended", "standard-with-typescript", "plugin:react/jsx-runtime"],
   "overrides": [],
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module",
-     "project": ["./tsconfig.json"]
+    "project": ["./tsconfig.json"]
   },
   "plugins": ["react"],
   "rules": {
@@ -28,8 +24,9 @@
     "@typescript-eslint/space-before-function-paren": "off",
     "camelcase": ["error", { "ignoreDestructuring": true }],
     "func-style": ["error", "declaration", { "allowArrowFunctions": true }],
-	"no-unneeded-ternary": "error",
-	"indent":"error",
-    "@typescript-eslint/member-delimiter-style": "off"
+    "no-unneeded-ternary": "error",
+    "indent": "error",
+    "@typescript-eslint/member-delimiter-style": "off",
+    "multiline-ternary": "off"
   }
 }
