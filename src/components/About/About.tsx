@@ -12,9 +12,11 @@ function About(): JSX.Element {
       <div className={style.containerAbout}>
         <div className={style.info}>
           <p>
-            El es un frontend developer ReactJS, con experiencia en desarrollo web con Javascript utilizando frameworks como React JS, y
-            Angular con experiencia de 2 años entre las practicas y laboral. Cuenta con experiencia con React, Angular, Git, PWA y
-            conocimientos en metodología SCRUM.
+            Desarrollador Frontend con experiencia en React, Angular y aprendiendo sobre Next JS, enfocado en la calidad del código y
+            dedicado al aprendizaje continuo. Experiencia profesional en empresas reconocidas, incluyendo roles de
+            liderazgo en equipo. Activo en la comunidad de programación, contribuyendo a la formación de otros profesionales en el campo del
+            Frontend. Las habilidades clave incluyen trabajo colaborativo, responsabilidad, alto grado de profesionalismo y capacidad para
+            liderar equipos efectivamente.
           </p>
         </div>
 
