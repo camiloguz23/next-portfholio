@@ -17,19 +17,19 @@ export default function ExperienceTime(): JSX.Element {
     const experience: Experience = {
       supremacy: {
         name: 'Supremacy Kingdom',
-        rol: 'Leader Team Fontend',
+        rol: 'Team Leader Fontend',
         description:
           'Como desarrollador ingeniero frontend altamente capacitado, ofrezco orientación experta al equipo en el uso de frameworks líderes como Angular, React y Next JS para garantizar proyectos escalables y fáciles de mantener. Mi enfoque se basa en las mejores prácticas de programación actuales, lo que me permite proporcionar soluciones innovadoras y de alta calidad que impulsan el éxito de su empresa. Trabajando conmigo, su equipo de desarrollo maximizará la productividad y la calidad del código.'
       },
       devsavant: {
         name: 'DevSavant S.A',
-        rol: 'Desarrollador de software',
+        rol: 'Frontend Developer',
         description:
           'Soy un desarrollador de aplicaciones web que ha creado soluciones personalizadas para empresas utilizando herramientas como React, Angular y Node JS. Mis habilidades incluyen programación, revisión de código y pruebas exhaustivas para garantizar la calidad y eficiencia de las aplicaciones. Me enfoco en las mejores prácticas de programación actuales para crear aplicaciones escalables y de fácil mantenimiento. Con mi experiencia, he ayudado a las empresas a mejorar su presencia en línea y aumentar su rentabilidad.'
       },
       globant: {
         name: 'Globant',
-        rol: 'College Student',
+        rol: 'Frontend Developer trainer',
         description:
           'Durante mis prácticas laborales, he adquirido nuevos conocimientos en el desarrollo frontend, así como en bases de datos como MySQL y Mongo DB. Además, he trabajado con herramientas de análisis de red como PyShark y Python. Mi pasión por aprender y adaptarme a las últimas tendencias me permite proporcionar soluciones innovadoras y de alta calidad para el éxito de su empresa.'
       },
